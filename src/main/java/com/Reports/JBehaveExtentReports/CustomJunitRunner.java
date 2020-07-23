@@ -1,4 +1,4 @@
-package runner;
+package com.Reports.JBehaveExtentReports;
 
 import org.jbehave.core.junit.JUnitStories;
 import org.springframework.context.ApplicationContext;

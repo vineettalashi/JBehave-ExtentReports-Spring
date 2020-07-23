@@ -1,9 +1,6 @@
-package modules;
+package com.Reports.JBehaveExtentReports;
 
 import org.springframework.stereotype.Component;
-
-import pages.TestPageObject;
-import utils.AssertAndReport;
 
 @Component
 public class TestStoryModule {

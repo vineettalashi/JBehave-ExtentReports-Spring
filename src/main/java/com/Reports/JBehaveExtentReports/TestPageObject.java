@@ -1,4 +1,4 @@
-package pages;
+package com.Reports.JBehaveExtentReports;
 
 public class TestPageObject {
 

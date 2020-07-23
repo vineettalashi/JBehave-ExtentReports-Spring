@@ -1,9 +1,7 @@
-package utils;
+package com.Reports.JBehaveExtentReports;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-
-import reporting.ExtentReport;
 
 public class AssertAndReport {
 	

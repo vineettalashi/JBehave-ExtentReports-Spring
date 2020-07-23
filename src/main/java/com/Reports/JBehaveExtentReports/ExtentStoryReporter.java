@@ -1,4 +1,4 @@
-package reporting;
+package com.Reports.JBehaveExtentReports;
 
 import org.jbehave.core.model.Scenario;
 import org.jbehave.core.model.Story;
