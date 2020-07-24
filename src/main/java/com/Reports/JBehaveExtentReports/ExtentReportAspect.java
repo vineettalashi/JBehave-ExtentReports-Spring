@@ -52,4 +52,16 @@ public class ExtentReportAspect {
             //Do Something useful, If you have
         }
     }
+	
+	@Around("execution(* com.Reports.JBehaveExtentReports.LogAndReport.*(..))")
+    public void reportAroundAllMethodsLogging(ProceedingJoinPoint joinPoint) throws Throwable 
+    {
+		test = extent.getCurrentExtentTest();
+		extent.setCurrentExtentTest(test.log(Status.INFO,"Log and Report ::: Method ->"+joinPoint.getSignature().getName() +" Arguements: "+Arrays.toString(joinPoint.getArgs())));
+        try {
+            joinPoint.proceed();
+        } finally {
+            //Do Something useful, If you have
+        }
+    }
 }

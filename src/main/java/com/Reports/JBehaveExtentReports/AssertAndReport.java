@@ -10,11 +10,12 @@ public class AssertAndReport {
 	public static void assertEquals(String message,String expected,String actual) {
 		test = extent.getCurrentExtentTest();
 		if(expected.equals(actual)) {
-			test.log(Status.PASS, "Assert Pass");
+			test = test.log(Status.PASS, "Assert Pass");
 		}
 		else {
-			test.log(Status.FAIL, message+". Expected Value: "+expected+". Actual value: "+actual);
+			test = test.log(Status.FAIL, message+". Expected Value: "+expected+". Actual value: "+actual);
 		}
+		extent.setCurrentExtentTest(test);
 	}
 
 }
